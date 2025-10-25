@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/project-list.css">
+
+<section class="projects-section">
+    <div class="projects-grid">
+        {% for project in collections.projects %}
+        <article class="project-card">
+            <div class="project-content">
+                <h3 class="project-title">
+                    {{ project.data.title }}
+                </h3>
+                <img src="{{ project.data.image }}" alt="{{ project.data.title }} image" class="project-image">
+                <a href="{{ project.url }}" class="project-link">go to {{ project.data.title }}</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
