@@ -12,14 +12,19 @@
     {% endif %}
 </head>
 <body>
+    <p class="theme-debug level1">base.njk</p>
+
     {% include "partials/header.njk" %}
 
     <main>
-        <p class="theme-debug level1">base.njk</p>
+
+        <p class="theme-debug level1">base.njk - before content</p>
         {{ content | safe }}
-        <p class="theme-debug level1">/base.njk</p>
+        <p class="theme-debug level1">base.njk - after content</p>
+        
     </main>
 
     {% include "partials/footer.njk" %}
+    <p class="theme-debug level1">/base.njk</p>
 </body>
 </html>
