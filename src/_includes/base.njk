@@ -15,7 +15,9 @@
     {% include "partials/header.njk" %}
 
     <main>
+        <p class="theme-debug level1">base.njk</p>
         {{ content | safe }}
+        <p class="theme-debug level1">/base.njk</p>
     </main>
 
     {% include "partials/footer.njk" %}
