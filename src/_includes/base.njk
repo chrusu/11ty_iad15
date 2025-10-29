@@ -12,12 +12,22 @@
     {% endif %}
 </head>
 <body>
-    {% include "partials/header.njk" %}
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">Portfolio</a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main>
-        {{ content | safe }}
-    </main>
-
-    {% include "partials/footer.njk" %}
+    <div class="container">
+        <main>
+            {{ content | safe }}
+        </main>
+    </div>
 </body>
 </html>
